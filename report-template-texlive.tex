@@ -1,0 +1,138 @@
+\documentclass{bxjsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+
+% プログラムリストの設定
+\usepackage{listings}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+\renewcommand{\lstlistingname}{プログラムリスト}
+
+
+\begin{document}
+
+% 表紙
+\begin{center}
+  \Huge レポートタイトルI\hspace{-3pt}I \par
+  \vspace{15mm}
+  \LARGE 実験テーマ \\ \underline{実験テーマ} \par
+  \vspace{10mm}　名前\\ \par
+  \vspace{40mm}
+  \Large 実験日\\0001年01月01日\\
+                 0001年01月01日\\
+				 0001年01月01日\\
+				 0001年01月01日\\
+  \vspace{5mm}
+         提出日\\ \today \par
+
+
+
+  \vspace{15mm}
+  \Large 共同実験者\\Alice \\
+                     Bob   \\
+
+\end{center}
+
+\thispagestyle{empty}
+\clearpage
+\addtocounter{page}{-1}
+
+\newpage
+
+% 本文
+\section{section}
+\subsection{subsection}
+\subsubsection{subsubsection}
+
+\section{section}
+
+% プログラム
+\begin{lstlisting}[caption=プログラム, label=prog:prog]
+int main(int argc, char **argv, char **envp);
+if (n % 2 == 0)
+	n += 1;
+\end{lstlisting}
+
+%\lstinputlisting[caption=プログラム, label=prog:prog]{prog.c}
+
+% 箇条書き
+\begin{enumerate}
+  \item A
+  \item B
+  \item C
+\end{enumerate}
+
+% 表
+\begin{table}[htb]
+  \centering
+  \caption{表}
+  \begin{tabular}{|l|r|}\hline
+   \multicolumn{1}{|c|}{OS} & \multicolumn{1}{|c|}{---項目---} \\ \hline \hline
+    Windows  & 好き \\  \hline
+    Mac      & 好き \\  \hline
+    Unix     & 好き \\  \hline
+
+  \end{tabular}
+\end{table}
+
+% 図
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=7cm]{image.jpg}
+  \caption{画像} \label{fig:image}
+\end{figure}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
